@@ -1,0 +1,46 @@
+﻿<Window x:Class="ukolos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ukolos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <StackPanel Grid.Column="0" Background="LightGray" Width="200" Margin="-4,69,5,0">
+            <Button Content="Hlavní stránka"/>
+            <Button Content="Trendy"/>
+            <Button Content="Odběry"/>
+            <Button Content="Knihovna"/>
+            <Button Content="Více"/>
+
+        </StackPanel>
+
+
+        <ScrollViewer Grid.Column="1">
+            <WrapPanel>
+
+                <Border Width="200" Height="150" Margin="10" Background="LightBlue">
+                    <TextBlock Text="Video 1"/>
+                </Border>
+                <Border Width="200" Height="150" Margin="10" Background="LightBlue">
+                    <TextBlock Text="Video 2"/>
+                </Border>
+                <Border Width="200" Height="150" Margin="10" Background="LightBlue">
+                    <TextBlock Text="Video 3"/>
+                </Border>
+                <Border Width="200" Height="150" Margin="10" Background="LightBlue">
+                    <TextBlock Text="Video 4"/>
+                </Border>
+
+            </WrapPanel>
+        </ScrollViewer>
+        <Image Margin="28,0,58,365" Source="C:\Users\realn\Desktop\letadloo\Youtube_logo.png" Stretch="Fill"/>
+    </Grid>
+</Window>
